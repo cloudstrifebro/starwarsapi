@@ -1,0 +1,94 @@
+﻿@model PlattSampleApp.Models.ViewModels.ResidentSummary
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Han Solo - the LEGEND</title>
+</head>
+<style>
+    .default-img-size{
+        display: inline-block;
+    }
+
+    img {
+        height: 425px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div>
+        <h4>Han's summary</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Height)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Height)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Weight)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Weight)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HairColor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HairColor)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EyeColor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EyeColor)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SkinColor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SkinColor)
+            </dd>
+    
+        </dl>
+    </div>    
+
+    <div class="default-img-size">
+        <img src="https://i.imgflip.com/2dra6y.jpg" />
+    </div>
+    <div class="default-img-size">
+        <img src="https://i.pinimg.com/originals/da/ee/d5/daeed5fa2a7c31909d900bb383f9bd8f.jpg" />
+    </div>
+     <div class="default-img-size">
+         <img src="https://i.pinimg.com/originals/04/91/3d/04913d9994aae2bdf14f381bbad73a50.png" />
+     </div>
+</body>
+</html>
